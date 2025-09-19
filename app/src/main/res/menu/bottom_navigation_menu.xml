@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="홈" />
+    
+    <item
+        android:id="@+id/nav_study"
+        android:icon="@drawable/open_book"
+        android:title="단어장" />
+    
+    <item
+        android:id="@+id/nav_statistics"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="통계" />
+    
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="설정" />
+
+</menu>
