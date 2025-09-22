@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/dark_gray"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cat_img_3" />
+
+    <!-- 일본어 입력 필드 -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilJapanese"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="일본어"
+        app:expandedHintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etJapanese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 히라가나 입력 필드 -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilHiragana"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="히라가나"
+        app:expandedHintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHiragana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 한글 입력 필드 -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilKorean"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="한글"
+        app:expandedHintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etKorean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 예문 입력 필드 -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilExample"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="예문"
+        app:expandedHintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="textMultiLine"
+            android:maxLines="3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 단어 추가 버튼 -->
+    <Button
+        android:id="@+id/btnAddWord"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="단어 추가"
+        android:backgroundTint="@color/custom_black"
+        android:textColor="@color/custom_white" />
+
+</LinearLayout>

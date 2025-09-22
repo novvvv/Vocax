@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="custom_black">#1C1B1B</color>
-    <color name="custom_white">#EDEDED</color>
+    <color name="custom_white">#D3D1CE</color>
+    <color name="dark_gray">#222526</color>
 </resources>
