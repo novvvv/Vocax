@@ -81,4 +81,13 @@
         app:tint="@color/custom_white"
         android:contentDescription="프로필" />
 
+    <!-- 아래 화살표 Lottie 애니메이션 (하단 중앙, 적당한 마진) -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieDownArrow"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:src="@raw/down_arrow" />
+
 </FrameLayout>
