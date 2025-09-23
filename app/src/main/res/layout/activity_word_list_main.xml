@@ -27,6 +27,48 @@
         app:tint="@color/custom_white"
         android:contentDescription="메뉴" />
 
+    <!-- 단어 추가 플로팅 버튼 (메뉴 위) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="@color/custom_black"
+        app:tint="@color/custom_white"
+        android:contentDescription="단어 추가"
+        android:visibility="gone" />
+
+    <!-- 설정 플로팅 버튼 (단어 추가 위) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="180dp"
+        android:src="@drawable/profile_ic_settings"
+        android:backgroundTint="@color/custom_black"
+        app:tint="@color/custom_white"
+        android:contentDescription="설정"
+        android:visibility="gone" />
+
+    <!-- 통계 플로팅 버튼 (설정 위) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="260dp"
+        android:src="@drawable/profile_ic_statistics"
+        android:backgroundTint="@color/custom_black"
+        app:tint="@color/custom_white"
+        android:contentDescription="통계"
+        android:visibility="gone" />
+
     <!-- 프로필 플로팅 버튼 (우측 하단) -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabProfile"
