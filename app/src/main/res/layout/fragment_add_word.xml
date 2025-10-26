@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 제목 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="새 단어 추가"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/custom_white"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- 단어 입력 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundColor="@color/custom_black"
+            app:hintTextColor="@color/custom_white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="단어"
+                android:textColor="@color/custom_white"
+                android:textColorHint="@color/custom_white"
+                android:inputType="textCapWords" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 의미 입력 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundColor="@color/custom_black"
+            app:hintTextColor="@color/custom_white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMeaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="의미"
+                android:textColor="@color/custom_white"
+                android:textColorHint="@color/custom_white"
+                android:inputType="textCapWords" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 발음 입력 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundColor="@color/custom_black"
+            app:hintTextColor="@color/custom_white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPronunciation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="발음 (선택사항)"
+                android:textColor="@color/custom_white"
+                android:textColorHint="@color/custom_white"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 메모 입력 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:boxBackgroundColor="@color/custom_black"
+            app:hintTextColor="@color/custom_white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="메모 (선택사항)"
+                android:textColor="@color/custom_white"
+                android:textColorHint="@color/custom_white"
+                android:inputType="textMultiLine"
+                android:maxLines="3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 버튼 영역 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- 취소 버튼 -->
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="취소"
+                android:textColor="@color/custom_white"
+                android:background="@drawable/button_cancel_background"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- 저장 버튼 -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="저장"
+                android:textColor="@color/custom_black"
+                android:background="@drawable/button_save_background"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
