@@ -69,7 +69,8 @@
         android:contentDescription="통계"
         android:visibility="gone" />
 
-    <!-- 프로필 플로팅 버튼 (우측 하단) -->
+    <!-- 프로필 플로팅 버튼 (우측 하단) - 일단 주석처리 -->
+    <!--
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabProfile"
         android:layout_width="wrap_content"
@@ -80,6 +81,7 @@
         android:backgroundTint="@color/custom_black"
         app:tint="@color/custom_white"
         android:contentDescription="프로필" />
+    -->
 
     <!-- 아래 화살표 Lottie 애니메이션 (하단 중앙, 적당한 마진) -->
     <com.airbnb.lottie.LottieAnimationView

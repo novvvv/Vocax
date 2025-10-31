@@ -125,34 +125,54 @@
 
     </LinearLayout>
 
-    <!-- 좋아요 버튼 (공유 버튼 위) -->
-    <ImageButton
-        android:id="@+id/btnLike"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+    <!-- 버튼 컨테이너 (오른쪽 하단에 일정 간격으로 배치) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="104dp"
-        android:src="@drawable/heart"
-        android:background="@android:color/transparent"
-        android:scaleType="centerInside"
-        android:contentDescription="좋아요"
-        android:padding="12dp"
-        android:tint="@color/custom_white" />
-
-    <!-- 공유 버튼 (오른쪽 하단 프로필 버튼 위) -->
-    <ImageButton
-        android:id="@+id/btnShare"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_gravity="bottom|end"
+        android:orientation="vertical"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="40dp"
-        android:src="@drawable/dm"
-        android:background="@android:color/transparent"
-        android:scaleType="centerInside"
-        android:contentDescription="공유하기"
-        android:padding="12dp"
-        android:tint="@color/custom_white" />
+        android:gravity="center_horizontal">
+
+        <!-- 좋아요 버튼 (맨 위) -->
+        <ImageButton
+            android:id="@+id/btnLike"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/heart"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:contentDescription="좋아요"
+            android:padding="12dp"
+            android:tint="@color/custom_white" />
+
+        <!-- 댓글 버튼 (중간) -->
+        <ImageButton
+            android:id="@+id/btnComment"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/memo"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:contentDescription="댓글"
+            android:padding="12dp"
+            android:tint="@color/custom_white" />
+
+        <!-- 공유 버튼 (맨 아래) -->
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/dm"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:contentDescription="공유하기"
+            android:padding="12dp"
+            android:tint="@color/custom_white" />
+
+    </LinearLayout>
 
 </FrameLayout>
