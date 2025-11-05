@@ -25,6 +25,7 @@
 
         <!-- 이미지 컨테이너 -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cvWordImage"
             android:layout_width="260dp"
             android:layout_height="260dp"
             android:layout_marginBottom="24dp"
@@ -86,6 +87,7 @@
 
         <!-- 이미지 컨테이너 -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cvNextWordImage"
             android:layout_width="260dp"
             android:layout_height="260dp"
             android:layout_marginBottom="24dp"
@@ -132,7 +134,7 @@
         android:layout_gravity="bottom|end"
         android:orientation="vertical"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center_horizontal">
 
         <!-- 좋아요 버튼 (맨 위) -->
@@ -152,7 +154,7 @@
             android:id="@+id/btnComment"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:src="@drawable/memo"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
@@ -160,16 +162,29 @@
             android:padding="12dp"
             android:tint="@color/custom_white" />
 
-        <!-- 공유 버튼 (맨 아래) -->
+        <!-- 공유 버튼 -->
         <ImageButton
             android:id="@+id/btnShare"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:src="@drawable/dm"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
             android:contentDescription="공유하기"
+            android:padding="12dp"
+            android:tint="@color/custom_white" />
+
+        <!-- 편집 버튼 (맨 아래) -->
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/edit"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:contentDescription="편집"
             android:padding="12dp"
             android:tint="@color/custom_white" />
 

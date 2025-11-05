@@ -9,8 +9,44 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:orientation="vertical">
+
+        <!-- 이미지 선택 영역 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ivWordImage"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cat_img_3"
+                android:scaleType="centerCrop"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:padding="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="이미지 선택" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이미지 선택 (클릭)"
+                android:textColor="@color/custom_white"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- 입력 필드 영역 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
 
         <!-- 제목 -->
         <TextView
@@ -132,6 +168,8 @@
                 android:background="@drawable/button_save_background"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+        </LinearLayout>
 
         </LinearLayout>
 

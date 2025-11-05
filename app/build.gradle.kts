@@ -43,6 +43,13 @@ dependencies {
     implementation("androidx.room:room-ktx:2.6.1")
     annotationProcessor("androidx.room:room-compiler:2.6.1")
     
+    // Lombok
+    compileOnly("org.projectlombok:lombok:1.18.30")
+    annotationProcessor("org.projectlombok:lombok:1.18.30")
+    
+    // Java 8 Time API (LocalDateTime 등)
+    implementation("com.jakewharton.threetenabp:threetenabp:1.4.6")
+    
     // Lottie Animation
     implementation("com.airbnb.android:lottie:6.1.0")
     
