@@ -23,7 +23,6 @@
                 android:id="@+id/ivWordImage"
                 android:layout_width="120dp"
                 android:layout_height="150dp"
-                android:src="@drawable/cat_img_3"
                 android:scaleType="centerCrop"
                 android:background="@android:drawable/dialog_holo_light_frame"
                 android:padding="4dp"
