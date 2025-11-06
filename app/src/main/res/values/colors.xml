@@ -4,4 +4,11 @@
     <color name="custom_white">#D3D1CE</color>
     <color name="dark_gray">#222526</color>
     <color name="light_gray">#E0E0E0</color>
+    
+    <!-- 단어장 페이지용 색상 -->
+    <color name="white">#FFFFFF</color>
+    <color name="light_pink">#FFF5F5</color>
+    <color name="text_dark">#2C2C2C</color>
+    <color name="text_secondary">#666666</color>
+    <color name="card_border">#E8E8E8</color>
 </resources>

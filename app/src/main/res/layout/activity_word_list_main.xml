@@ -12,8 +12,7 @@
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="120dp" />
+        android:layout_height="match_parent" />
 
     <!-- 메뉴 플로팅 버튼 (왼쪽 하단) -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -55,9 +54,9 @@
         android:contentDescription="설정"
         android:visibility="gone" />
 
-    <!-- 통계 플로팅 버튼 (설정 위) -->
+    <!-- 단어장 플로팅 버튼 (설정 위) -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabStatistics"
+        android:id="@+id/fabWordList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
@@ -66,7 +65,7 @@
         android:src="@drawable/open_book"
         android:backgroundTint="@color/custom_black"
         app:tint="@color/custom_white"
-        android:contentDescription="통계"
+        android:contentDescription="단어장"
         android:visibility="gone" />
 
     <!-- 프로필 플로팅 버튼 (우측 하단) - 일단 주석처리 -->
