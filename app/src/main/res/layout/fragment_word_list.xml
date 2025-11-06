@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_gray">
+    android:background="@color/white">
 
     <!-- 현재 카드 -->
     <LinearLayout
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:text="1/3"
             android:textSize="24sp"
-            android:textColor="@color/custom_white"
+            android:textColor="@color/text_dark"
             android:layout_marginBottom="16dp" />
 
         <!-- 이미지 컨테이너 -->
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:text="Vocabulary"
             android:textSize="48sp"
-            android:textColor="@color/custom_white"
+            android:textColor="@color/text_dark"
             android:layout_marginBottom="24dp"
             android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:text="This is a test Sentence"
             android:textSize="20sp"
-            android:textColor="@color/custom_white"
+            android:textColor="@color/text_dark"
             android:gravity="center"
             android:lineSpacingExtra="4dp" />
 
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:text="2/3"
             android:textSize="24sp"
-            android:textColor="@color/custom_white"
+            android:textColor="@color/text_dark"
             android:layout_marginBottom="16dp" />
 
         <!-- 이미지 컨테이너 -->
@@ -111,7 +111,7 @@
             android:layout_height="wrap_content"
             android:text="Next Word"
             android:textSize="48sp"
-            android:textColor="@color/custom_white"
+            android:textColor="@color/text_dark"
             android:layout_marginBottom="24dp"
             android:textStyle="bold" />
 
@@ -121,7 +121,7 @@
             android:layout_height="wrap_content"
             android:text="Next Sentence"
             android:textSize="20sp"
-            android:textColor="@color/custom_white"
+            android:textColor="@color/text_dark"
             android:gravity="center"
             android:lineSpacingExtra="4dp" />
 
@@ -147,7 +147,7 @@
             android:scaleType="centerInside"
             android:contentDescription="좋아요"
             android:padding="12dp"
-            android:tint="@color/custom_white" />
+            android:tint="@color/text_dark" />
 
         <!-- 댓글 버튼 (중간) -->
         <ImageButton
@@ -160,7 +160,7 @@
             android:scaleType="centerInside"
             android:contentDescription="댓글"
             android:padding="12dp"
-            android:tint="@color/custom_white" />
+            android:tint="@color/text_dark" />
 
         <!-- 공유 버튼 -->
         <ImageButton
@@ -173,7 +173,7 @@
             android:scaleType="centerInside"
             android:contentDescription="공유하기"
             android:padding="12dp"
-            android:tint="@color/custom_white" />
+            android:tint="@color/text_dark" />
 
         <!-- 편집 버튼 (맨 아래) -->
         <ImageButton
@@ -186,7 +186,7 @@
             android:scaleType="centerInside"
             android:contentDescription="편집"
             android:padding="12dp"
-            android:tint="@color/custom_white" />
+            android:tint="@color/text_dark" />
 
     </LinearLayout>
 
