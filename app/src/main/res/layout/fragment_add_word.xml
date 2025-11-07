@@ -3,175 +3,204 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_gray"
-    android:fillViewport="true">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <!-- 이미지 선택 영역 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="16dp">
-
-    <ImageView
-                android:id="@+id/ivWordImage"
-                android:layout_width="120dp"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                android:background="@android:drawable/dialog_holo_light_frame"
-                android:padding="4dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:contentDescription="이미지 선택" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="이미지 선택 (클릭)"
-                android:textColor="@color/custom_white"
-                android:textSize="12sp"
-                android:layout_marginTop="8dp" />
-
-        </LinearLayout>
-
-        <!-- 입력 필드 영역 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
-
-        <!-- 제목 -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="새 단어 추가"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@color/custom_white"
-            android:gravity="center"
-            android:layout_marginBottom="32dp" />
-
-        <!-- 단어 입력 -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:boxBackgroundColor="@color/custom_black"
-            app:hintTextColor="@color/custom_white">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etWord"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="단어"
-                android:textColor="@color/custom_white"
-                android:textColorHint="@color/custom_white"
-                android:inputType="textCapWords" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <!-- 의미 입력 -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:boxBackgroundColor="@color/custom_black"
-            app:hintTextColor="@color/custom_white">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etMeaning"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="의미"
-                android:textColor="@color/custom_white"
-                android:textColorHint="@color/custom_white"
-                android:inputType="textCapWords" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <!-- 발음 입력 -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:boxBackgroundColor="@color/custom_black"
-            app:hintTextColor="@color/custom_white">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPronunciation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="발음 (선택사항)"
-                android:textColor="@color/custom_white"
-                android:textColorHint="@color/custom_white"
-                android:inputType="text" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <!-- 메모 입력 -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            app:boxBackgroundColor="@color/custom_black"
-            app:hintTextColor="@color/custom_white">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etMemo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="메모 (선택사항)"
-                android:textColor="@color/custom_white"
-                android:textColorHint="@color/custom_white"
-                android:inputType="textMultiLine"
-                android:maxLines="3" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <!-- 버튼 영역 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <!-- 취소 버튼 -->
-            <Button
-                android:id="@+id/btnCancel"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginEnd="8dp"
-                android:text="취소"
-                android:textColor="@color/custom_white"
-                android:background="@drawable/button_cancel_background"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <!-- 저장 버튼 -->
-            <Button
-                android:id="@+id/btnSave"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginStart="8dp"
-                android:text="저장"
-                android:textColor="@color/custom_black"
-                android:background="@drawable/button_save_background"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</ScrollView>
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="24dp"
+    android:clipToPadding="false">
+ 
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+ 
+         <!-- 헤더 영역 -->
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginBottom="24dp">
+ 
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="새 단어 추가"
+                 android:textSize="32sp"
+                 android:textStyle="bold"
+                 android:textColor="@color/text_dark" />
+ 
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="단어와 이미지를 등록해보세요"
+                 android:textSize="16sp"
+                 android:textColor="@color/text_secondary"
+                 android:layout_marginTop="4dp" />
+ 
+         </LinearLayout>
+ 
+         <!-- 이미지 선택 영역 -->
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:gravity="start"
+             android:layout_marginBottom="24dp">
+ 
+             <ImageView
+                 android:id="@+id/ivWordImage"
+                 android:layout_width="140dp"
+                 android:layout_height="140dp"
+                 android:scaleType="centerCrop"
+                 android:clickable="true"
+                 android:focusable="true"
+                 android:contentDescription="이미지 선택"
+                 android:background="@drawable/word_list_card_background"
+                 android:padding="12dp"
+                 android:layout_marginBottom="12dp" />
+ 
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="이미지 선택 (클릭)"
+                 android:textColor="@color/text_secondary"
+                 android:textSize="14sp" />
+ 
+         </LinearLayout>
+ 
+         <!-- 입력 필드 영역 -->
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginBottom="24dp">
+ 
+             <!-- 단어 입력 -->
+             <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="16dp"
+                 app:boxBackgroundMode="outline"
+                 app:boxStrokeColor="@color/card_border"
+                 app:boxStrokeWidth="1dp"
+                 app:hintTextColor="@color/text_secondary">
+ 
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/etWord"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:hint="단어"
+                     android:textColor="@color/text_dark"
+                     android:textColorHint="@color/text_secondary"
+                     android:inputType="textCapWords" />
+ 
+             </com.google.android.material.textfield.TextInputLayout>
+ 
+             <!-- 의미 입력 -->
+             <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="16dp"
+                 app:boxBackgroundMode="outline"
+                 app:boxStrokeColor="@color/card_border"
+                 app:boxStrokeWidth="1dp"
+                 app:hintTextColor="@color/text_secondary">
+ 
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/etMeaning"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:hint="의미"
+                     android:textColor="@color/text_dark"
+                     android:textColorHint="@color/text_secondary"
+                     android:inputType="textCapWords" />
+ 
+             </com.google.android.material.textfield.TextInputLayout>
+ 
+             <!-- 발음 입력 -->
+             <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="16dp"
+                 app:boxBackgroundMode="outline"
+                 app:boxStrokeColor="@color/card_border"
+                 app:boxStrokeWidth="1dp"
+                 app:hintTextColor="@color/text_secondary">
+ 
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/etPronunciation"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:hint="발음 (선택사항)"
+                     android:textColor="@color/text_dark"
+                     android:textColorHint="@color/text_secondary"
+                     android:inputType="text" />
+ 
+             </com.google.android.material.textfield.TextInputLayout>
+ 
+             <!-- 메모 입력 -->
+             <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 app:boxBackgroundMode="outline"
+                 app:boxStrokeColor="@color/card_border"
+                 app:boxStrokeWidth="1dp"
+                 app:hintTextColor="@color/text_secondary">
+ 
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/etMemo"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:hint="메모 (선택사항)"
+                     android:textColor="@color/text_dark"
+                     android:textColorHint="@color/text_secondary"
+                     android:inputType="textMultiLine"
+                     android:maxLines="3" />
+ 
+             </com.google.android.material.textfield.TextInputLayout>
+ 
+         </LinearLayout>
+ 
+         <!-- 버튼 영역 -->
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center"
+             android:layout_marginBottom="12dp">
+ 
+             <!-- 취소 버튼 -->
+             <com.google.android.material.button.MaterialButton
+                 android:id="@+id/btnCancel"
+                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_marginEnd="8dp"
+                 android:text="취소"
+                 android:textColor="@color/text_dark"
+                 app:strokeColor="@color/card_border"
+                 app:strokeWidth="1dp"
+                 app:cornerRadius="16dp"
+                 android:backgroundTint="@android:color/transparent" />
+ 
+             <!-- 저장 버튼 -->
+             <com.google.android.material.button.MaterialButton
+                 android:id="@+id/btnSave"
+                 style="@style/Widget.MaterialComponents.Button"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_marginStart="8dp"
+                 android:text="저장"
+                 android:textColor="@color/white"
+                 android:backgroundTint="@color/text_dark"
+                 app:cornerRadius="16dp" />
+ 
+         </LinearLayout>
+ 
+     </LinearLayout>
+ 
+ </ScrollView>
