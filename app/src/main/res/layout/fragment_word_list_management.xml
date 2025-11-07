@@ -36,6 +36,21 @@
                 android:textColor="@color/text_dark"
                 android:fontFamily="serif" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCreateWordList"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="단어장 추가"
+                android:textAllCaps="false"
+                android:textColor="@color/text_dark"
+                android:backgroundTint="@android:color/transparent"
+                app:icon="@drawable/ic_add"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:iconTint="@color/text_dark"
+                app:cornerRadius="12dp" />
+
         </LinearLayout>
 
         <!-- 제목 아래 텍스트 -->
