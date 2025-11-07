@@ -24,6 +24,7 @@
              android:layout_marginBottom="24dp">
  
              <TextView
+                 android:id="@+id/tvHeaderTitle"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:text="새 단어 추가"
@@ -32,6 +33,7 @@
                  android:textColor="@color/text_dark" />
  
              <TextView
+                 android:id="@+id/tvHeaderSubtitle"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:text="단어와 이미지를 등록해보세요"
