@@ -34,6 +34,19 @@
         android:layout_marginBottom="12dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOptionEdit"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/word_list_option_edit"
+        android:textColor="@color/text_dark"
+        app:strokeColor="@color/card_border"
+        app:strokeWidth="1dp"
+        android:backgroundTint="@android:color/transparent"
+        android:textAllCaps="false"
+        android:layout_marginBottom="12dp" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnOptionPin"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="match_parent"
