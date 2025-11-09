@@ -11,4 +11,5 @@
     <string name="word_list_unpin_success">%1$s 단어장 고정을 해제했습니다.</string>
     <string name="close">닫기</string>
     <string name="word_list_selected">선택된 단어장</string>
+    <string name="word_list_cloud">클라우드 단어장</string>
 </resources>
