@@ -37,6 +37,7 @@
 
                 <!-- Like 태그 -->
                 <TextView
+                    android:id="@+id/tvLikeTag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Like"
@@ -136,6 +137,7 @@
 
             <!-- Like 태그 -->
             <TextView
+                android:id="@+id/tvNextLikeTag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Like"
