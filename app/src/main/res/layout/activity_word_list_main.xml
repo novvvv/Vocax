@@ -48,7 +48,7 @@
         android:layout_gravity="bottom|start"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="180dp"
-        android:src="@drawable/profile_ic_settings"
+        android:src="@drawable/network"
         android:backgroundTint="@color/custom_black"
         app:tint="@color/custom_white"
         android:contentDescription="설정"

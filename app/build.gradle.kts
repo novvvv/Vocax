@@ -6,6 +6,13 @@ android {
     namespace = "com.example.vopet"
     compileSdk = 36
 
+    // local.properties 파일 읽기
+    val localProperties = java.util.Properties()
+    val localPropertiesFile = rootProject.file("local.properties")
+    if (localPropertiesFile.exists()) {
+        localPropertiesFile.inputStream().use { localProperties.load(it) }
+    }
+
     defaultConfig {
         applicationId = "com.example.vopet"
         minSdk = 24
@@ -14,6 +21,13 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // BuildConfig에 BASE_URL 추가 (local.properties에서 읽어옴)
+        buildConfigField(
+            "String",
+            "BASE_URL",
+            "\"${localProperties.getProperty("BASE_URL", "https://your-api-server.com/")}\""
+        )
     }
 
     buildTypes {
@@ -28,6 +42,11 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    // BuildConfig 생성 활성화
+    buildFeatures {
+        buildConfig = true
     }
 }
 
@@ -52,6 +71,12 @@ dependencies {
     
     // Lottie Animation
     implementation("com.airbnb.android:lottie:6.1.0")
+    
+    // Retrofit (HTTP 클라이언트)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
     
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
