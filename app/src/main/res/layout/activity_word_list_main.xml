@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:clipChildren="false"
+    android:clipToPadding="false"
     tools:context=".WordListMainActivity">
 
     <!-- 메인 콘텐츠 영역 -->
@@ -40,19 +42,52 @@
         android:contentDescription="단어 추가"
         android:visibility="gone" />
 
-    <!-- 설정 플로팅 버튼 (단어 추가 위) -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabSettings"
+    <!-- 설정 플로팅 버튼 (단어 추가 위) + 클라우드 뱃지 -->
+    <FrameLayout
+        android:id="@+id/fabSettingsContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="180dp"
-        android:src="@drawable/network"
-        android:backgroundTint="@color/custom_black"
-        app:tint="@color/custom_white"
-        android:contentDescription="설정"
-        android:visibility="gone" />
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:visibility="gone">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/network"
+            android:backgroundTint="@color/custom_black"
+            app:tint="@color/custom_white"
+            android:contentDescription="설정"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCloudBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="22dp"
+            android:minHeight="22dp"
+            android:padding="2dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="-10dp"
+            android:translationX="0dp"
+            android:translationY="0dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+            android:background="@drawable/bg_cloud_badge"
+            android:elevation="12dp"
+            android:visibility="gone"
+            tools:text="12"
+            tools:visibility="visible" />
+
+    </FrameLayout>
 
     <!-- 단어장 플로팅 버튼 (설정 위) -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
