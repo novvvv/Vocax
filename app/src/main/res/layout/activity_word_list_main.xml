@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
         android:layout_margin="24dp"
-        android:src="@drawable/menu"
+        android:src="@drawable/pet_menu"
         android:backgroundTint="@color/custom_black"
         app:tint="@color/custom_white"
         android:contentDescription="메뉴" />
@@ -58,7 +58,7 @@
             android:id="@+id/fabSettings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/network"
+            android:src="@drawable/menu_bone"
             android:backgroundTint="@color/custom_black"
             app:tint="@color/custom_white"
             android:contentDescription="설정"
@@ -101,6 +101,20 @@
         android:backgroundTint="@color/custom_black"
         app:tint="@color/custom_white"
         android:contentDescription="단어장"
+        android:visibility="gone" />
+
+    <!-- 메인 화면 플로팅 버튼 (맨 위) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="340dp"
+            android:src="@drawable/ic_home"
+        android:backgroundTint="@color/custom_black"
+        app:tint="@color/custom_white"
+        android:contentDescription="메인 화면"
         android:visibility="gone" />
 
     <!-- 프로필 플로팅 버튼 (우측 하단) - 일단 주석처리 -->
