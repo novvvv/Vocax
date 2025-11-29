@@ -4,6 +4,7 @@
     <color name="custom_white">#D3D1CE</color>
     <color name="dark_gray">#222526</color>
     <color name="light_gray">#E0E0E0</color>
+    <color name="custom_gray">#888888</color>
     
     <!-- 단어장 페이지용 색상 -->
     <color name="white">#FFFBF4</color>

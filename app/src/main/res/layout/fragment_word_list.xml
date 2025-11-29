@@ -225,19 +225,6 @@
             android:padding="12dp"
             android:tint="@color/text_dark" />
 
-        <!-- 댓글 버튼 (중간) -->
-        <ImageButton
-            android:id="@+id/btnComment"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/memo"
-            android:background="@android:color/transparent"
-            android:scaleType="centerInside"
-            android:contentDescription="댓글"
-            android:padding="12dp"
-            android:tint="@color/text_dark" />
-
         <!-- 공유 버튼 -->
         <ImageButton
             android:id="@+id/btnShare"
