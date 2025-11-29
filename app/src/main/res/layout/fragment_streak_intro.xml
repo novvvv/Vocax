@@ -12,16 +12,29 @@
         android:gravity="center"
         android:padding="24dp">
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/lottieDog"
+        <!-- 강아지 로티와 뼈다귀를 겹쳐서 표시할 컨테이너 -->
+        <FrameLayout
             android:layout_width="320dp"
             android:layout_height="320dp"
-            android:layout_gravity="center"
-            app:lottie_rawRes="@raw/happy_dog"
-            android:scaleType="centerInside"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            android:contentDescription="반려어휘 강아지" />
+            android:layout_gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieDog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/happy_dog"
+                android:scaleType="centerInside"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:contentDescription="반려어휘 강아지" />
+
+            <!-- 뼈다귀를 동적으로 배치할 컨테이너 -->
+            <FrameLayout
+                android:id="@+id/boneContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
 
     </LinearLayout>
 
