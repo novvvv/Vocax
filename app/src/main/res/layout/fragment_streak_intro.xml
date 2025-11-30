@@ -28,11 +28,6 @@
                 app:lottie_loop="true"
                 android:contentDescription="반려어휘 강아지" />
 
-            <!-- 뼈다귀를 동적으로 배치할 컨테이너 -->
-            <FrameLayout
-                android:id="@+id/boneContainer"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
 
         </FrameLayout>
 
